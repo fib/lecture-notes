@@ -1,5 +1,61 @@
 \documentclass{article}
 \usepackage{amsmath}
+<<<<<<< HEAD
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\title{CS220: Lecture Notes}
+\author{Josh Kotler}
+\date{last updated: \today}
+
+\begin{document}
+\maketitle
+\section{Boolean Algebra}
+\begin{itemize}
+    \item Boolean algebra defines operations and rules for working with the set $\{0,1\}$.
+\end{itemize}
+\subsection{Boolean Operations and Functions}
+\begin{description}
+    \item[Complement] Denoted by a bar:
+        \begin{align*}
+            \overline{0} &= 1   &   \overline{1} &= 0
+        \end{align*}
+    \item[Boolean sum] Denoted as $+$ / $\text{OR}$:
+        \begin{align*}
+            1 + 1 &= 1   &   1 + 0 &= 1   \\
+            0 + 1 &= 1   &   0 + 0 &= 0
+        \end{align*}
+    \item[Boolean product] Denoted as $\cdot$ / $\text{AND}$:
+        \begin{align*}
+            1 \cdot 1 &= 1   &   1 \cdot 0 &= 0   \\
+            0 \cdot 1 &= 0   &   0 \cdot 0 &= 0
+        \end{align*}
+\end{description}
+\begin{definition}[Boolean variable] Variable $x$ is a \textbf{Boolean variable} only
+    if $x \in \{0,1\}$.
+\end{definition}
+\subsection{Identities}
+\subsection{Defintition of a Boolean Algebra}
+\begin{itemize}
+    \item All the properties of Boolean functions and expression
+        apply to other mathematical structures such as propositions
+        and sets and the operations defined on them.
+    \item If we can show that a particular structure is a Boolean algebra,
+        then we know that all results established about Boolean algebras apply
+        to this structure.
+    \item For this purpose, we need an abstract definition of a Boolean algebra.
+\end{itemize}
+\begin{definition}[Boolean Algebra] A Boolean algebra is a set B with two binary operators
+    $\land$ and $\lor$, elements 0 and 1, and a unary operation --
+    such that the following properties hold fo all $x$, $y$, and $z$ in
+    B:
+    \begin{itemize}
+        \item $x \lor 0 = x$ and $x \land 1 = x$ (identity laws).
+    \end{itemize}
+\end{definition}
+=======
 
 \title{CS220: Lecture 11 Notes}
 \author{Josh Kotler}
@@ -26,4 +82,5 @@
     \end{description}
     \section{Identities}
 
+>>>>>>> main
 \end{document}
