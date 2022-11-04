@@ -1,6 +1,5 @@
 \documentclass{article}
 \usepackage{amsmath}
-<<<<<<< HEAD
 \usepackage{amsthm}
 
 \theoremstyle{definition}
@@ -55,32 +54,28 @@
         \item $x \lor 0 = x$ and $x \land 1 = x$ (identity laws).
     \end{itemize}
 \end{definition}
-=======
-
-\title{CS220: Lecture 11 Notes}
-\author{Josh Kotler}
-\date{\today}
-
-\begin{document}
-    \maketitle
-    \section{Boolean Operations and Functions}
-    \begin{description}
-        \item[Complement] Denoted by a bar.
-            \begin{align*}
-                \overline{0} &= 1   &   \overline{1} &= 0
-            \end{align*}
-        \item[Boolean sum] Denoted as $+$ / $\text{OR}$
-            \begin{align*}
-                1 + 1 &= 1   &   1 + 0 &= 1   \\
-                0 + 1 &= 1   &   0 + 0 &= 0
-            \end{align*}
-        \item[Boolean product] Denoted as $\cdot$ / $\text{AND}$
-            \begin{align*}
-                1 \cdot 1 &= 1   &   1 \cdot 0 &= 0   \\
-                0 \cdot 1 &= 0   &   0 \cdot 0 &= 0
-            \end{align*}
-    \end{description}
-    \section{Identities}
-
->>>>>>> main
+\section{Relations}
+\begin{itemize}
+    \item If we want to describe a relationship between elements of two sets $A$ and $B$,
+        we can use ordered pairs with an element taken from $A$ and an element taken from $B$.
+    \item Since this is a relation between two sets, it is called a \emph{binary relation}.
+\end{itemize}
+\begin{definition}[Binary Relation] Let $A$ and $B$ be sets. A \textbf{binary relation} from $A$ to
+    $B$ is a subset of $A \times B$.
+\end{definition}
+\begin{itemize}
+    \item In other words, for a binary relation $R$ we have $R \subseteq A \times B$.
+        We use the notation aRb to denote that $(a,b) \in R$ and a\underline{R}b to denote
+        that $(a,b) \notin R$.
+    \item When $(a,b)$ belongs to $R$, $a$ is said to be related to $b$ by $R$.
+    \item \textbf{Example:} Let $P$ be a set of people, $C$ be a set of cars, and $D$
+        be the relation describing which person drives which car(s).
+        \begin{itemize}
+            \item $P = \text{\{Carl,Suzanne,Peter,Carla\}}$ 
+            \item $C = \text{\{Mercedes,BMW,tricycle\}}$ 
+            \item $D = \text{\{(Carl,Mercedes),(Suzanne,Mercedes),(Suzanne,BMW),(Peter,tricycle)\}}$
+        \end{itemize}
+        This means that Carl drives a Mercedes, Suzanne drives a Mercedes and a BMW, Peter
+        drivevs a tricycle, and Carla does not drive of these vehicles.
+\end{itemize}
 \end{document}
